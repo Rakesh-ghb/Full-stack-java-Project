@@ -1,0 +1,41 @@
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #020617;
+  padding: 14px 30px;
+
+  border-bottom: 1px solid #1f2933;
+}
+
+.admin-logo {
+  color: cyan;
+  letter-spacing: 1px;
+}
+
+.admin-links a {
+  margin-right: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admin-links a:hover {
+  color: cyan;
+}
+
+.admin-logout {
+  background: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-page-container {
+  padding: 20px;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  min-height: 100vh;
+}

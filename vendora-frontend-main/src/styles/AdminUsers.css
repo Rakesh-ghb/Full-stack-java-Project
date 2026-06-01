@@ -1,0 +1,119 @@
+.admin-users-container {
+  padding: 30px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at top, #0f172a, #020617);
+
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.admin-users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.admin-users-header h2 {
+  letter-spacing: 1px;
+}
+
+/* ===== SEARCH BOX ===== */
+.user-search {
+  padding: 8px 12px;
+  border-radius: 10px;
+
+  background: #020617;
+  border: 1px solid #1f2933;
+
+  color: white;
+  width: 220px;
+}
+
+/* ===== USER CARD ===== */
+.admin-user-card {
+  background: #020617;
+
+  padding: 14px 16px;
+  margin-bottom: 10px;
+
+  border-radius: 16px;
+  border: 1px solid #1f2933;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.4),
+    inset 0 0 15px rgba(255,255,255,0.02);
+
+  transition: all 0.3s ease;
+
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 0.6fr;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.admin-user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(56,189,248,0.25);
+}
+
+/* ===== TEXT ===== */
+.user-label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.user-value {
+  font-weight: bold;
+}
+
+/* ===== EMAIL ===== */
+.user-email {
+  color: #60a5fa;
+  word-break: break-all;
+}
+
+/* ===== ROLE BADGE ===== */
+.role-ADMIN {
+  background: rgba(248,113,113,0.15);
+  color: #f87171;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.role-USER {
+  background: rgba(74,222,128,0.15);
+  color: #4ade80;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
+
+  .admin-user-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-users-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .user-search {
+    width: 100%;
+  }
+}

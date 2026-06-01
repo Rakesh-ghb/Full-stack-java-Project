@@ -1,0 +1,134 @@
+.admin-payments-container {
+  padding: 30px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at top, #0f172a, #020617);
+
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.admin-payments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.admin-payments-header h2 {
+  letter-spacing: 1px;
+}
+
+/* ===== SEARCH ===== */
+.payment-search {
+  padding: 8px 12px;
+
+  border-radius: 10px;
+  background: #020617;
+
+  border: 1px solid #1f2933;
+  color: white;
+
+  width: 220px;
+}
+
+/* ===== CARD ===== */
+.admin-payment-card {
+  background: #020617;
+
+  padding: 14px 16px;
+  margin-bottom: 10px;
+
+  border-radius: 16px;
+  border: 1px solid #1f2933;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.4),
+    inset 0 0 15px rgba(255,255,255,0.02);
+
+  transition: all 0.3s ease;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr;
+
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-payment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(56,189,248,0.25);
+}
+
+/* ===== TEXT ===== */
+.pay-label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.pay-value {
+  font-weight: bold;
+}
+
+/* ===== AMOUNT ===== */
+.amount {
+  color: #60a5fa;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* ===== STATUS BADGES ===== */
+
+.status-SUCCESS {
+  background: rgba(74,222,128,0.15);
+  color: #4ade80;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.status-CREATED {
+  background: rgba(250,204,21,0.15);
+  color: #facc15;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.status-FAILED {
+  background: rgba(248,113,113,0.15);
+  color: #f87171;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 800px) {
+
+  .admin-payment-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-payments-header {
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: flex-start;
+  }
+
+  .payment-search {
+    width: 100%;
+  }
+}
