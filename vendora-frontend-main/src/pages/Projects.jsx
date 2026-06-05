@@ -222,18 +222,14 @@ export default function Projects() {
               className="project-card"
             >
 
-              <img
-                src={`http://localhost:8082/api/projects/image/${p.projectId}`}
-
-                className="project-img"
-
-                alt="project"
-
-                onError={(e) => {
-                  e.target.src =
-                    "/default.png";
-                }}
-              />
+             <img
+  src={`https://backend-project-production-1a9f.up.railway.app/api/projects/image/${p.projectId}`}
+  className="project-img"
+  alt="project"
+  onError={(e) => {
+    e.target.src = "/default.png";
+  }}
+/>
 
               <h3>{p.title}</h3>
 
